@@ -1,0 +1,89 @@
+Locators in Selenium:
+1 ID
+2. Class name
+3. Linktext( it must have a link tag <a>)
+4.partial link text
+5. tagName
+6. xpath
+7. CSS
+
+~~~~~~~~Xpath~~~~~~~~~~(2 types:relative and absolute)
+1. Relative Xpath:
+Syntax:
+through attribute
+***********//tagname[@attribute='attribute value']
+translation:
+hey, get me the tagname,which has an attribute whose value is "attribute value"
+Example:
+
+<input name="abra", class="fgjh"/>
+====>> task to write down the xpath
+//input[@name='abra']
+translation:
+get me the tag "input" which an attribute name whose value is "abra";
+
+xpath have some more features:(remain the same only syntax is different)
+find by text
+find by partial text
+
+Syntax for xpath(finding by text)
+*****************//tagname[text()='text value']
+translation:
+get me the tagname which has a text "text value"
+
+condition:
+our html code (webelement) must have text
+
+<button id="tro", class="fyo">hello</button>
+answer:
+//button[text()='hello']
+
+Syntax for xpath (finding by contains method):
+************a. for attribute
+//tagname[contains(@attribute,'partial attribute value')]
+
+example:
+
+<input email="how are you, thank you" id="gfgf"/>
+xpath:
+//input[contains(@email,'how are')]
+-------------------------------------------------------
+**************d. for text
+//tagname[contains(text(),'partial attribute value')]
+
+contains can be used in a scenario where
+1.the attribute or text is very long
+2. when the part of the value or text is dynamic
+<button id='hello 0'/> 0 will change
+//button[contains(@id,'hello')]
+
+XPATH 4 TYPE
+by attribute   //tagname[@attribute='attribute value']
+by text         //tagname[text()='text value']
+by partial attribute value  //tagname[contains(@attribute,'partial attribute value')]
+by partial text value    //tagname[contains(text(),'partial attribute value')]
+
+  we learned 2 more methods
+  .clear()---->clear the box
+  .getText()---->it gets the text from the webelement(if no text it eill print empty)
+  .getAttribute()-----> to get value from attribute
+  but if we try a lot to find the unique element but it always 1 or 2
+  which one will be accessed ????
+  the first one but we can put index [1] or [2]
+
+
+*********************************************************
+
+2. Absolute Xpath
+      refers to the exact pin point of the location
+      of the element but it is usually avoided, not much
+      used in the industry. as a little change in dom can change
+      that location
+
+  ================================================================
+  ===================================================================
+   By tagName
+
+   in order to use this locator you just give the tagName
+   it is very helpful in scenario where u want
+   to get multiple elements with the same tag name
