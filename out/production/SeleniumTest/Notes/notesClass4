@@ -1,0 +1,40 @@
+***************  Locator CSS   ************
+
+.getattribute() ----> value of the attribute
+
+________________________________________________
+ CSS
+
+ 1.get an Element using CSS selector
+  Syntax:
+        tagname[attribute='attribute value']
+     f.e. a[data-testid='open-registration-form-button']
+
+  The beauty about CSS selector is that instead of writing the full
+  sybtax u can also use shortcuts
+
+  classname-----> tagname[classname='value'] u can write "tagname.value"----> .
+  ID     -------> tagname[id='value'] u can write    "tagname#value"--->#
+
+  In css selector we don't have the option of getting an element by TEXT
+
+  Css has contains method that can be used
+  Syntax:
+            tagname[attribute*='partial attribute value']
+  Css has someother amazing features to like
+     a. starts-with method in css;
+            tagname[attribute^='starting attribute value']   where ^ means starts with
+
+    b.  ends with method in css
+             tagname[attribute$='ending attribute value']  where $ means end value
+
+    ---------------------------------------------------
+Radio Buttons
+
+
+.isEnabled()---> if we can select the button(greyed out(not selectable)) boolean
+.isSelected()----->check if button is selected  boolean
+.isDisplayed()---->visible or not     boolen
+
+
+
