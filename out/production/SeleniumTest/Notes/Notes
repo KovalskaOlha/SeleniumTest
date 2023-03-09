@@ -65,7 +65,7 @@ by partial text value    //tagname[contains(text(),'partial attribute value')]
 
   we learned 2 more methods
   .clear()---->clear the box
-  .getText()---->it gets the text from the webelement(if no text it eill print empty)
+  .getText()---->it gets the text from the webelement(if no text it will print empty)
   .getAttribute()-----> to get value from attribute
   but if we try a lot to find the unique element but it always 1 or 2
   which one will be accessed ????

@@ -1,0 +1,46 @@
+*****************Class 06*********************
+1.switchTo.window();
+2.switchto.frame(); ___>switch the focus
+
+
+
+
+IFrame!!!!!!!!!!!!!
+when you want to switch to iframe:
+byIndex()
+by name or id;
+by finding WebElement or using locator
+
+defaultContent(); ----> is the parent
+
+
+
+<html>
+    <body>
+    <iframe>
+    </iframe>
+
+
+      <iframe>
+            <html>
+            <body>
+               <iframe>(nested iframe)
+               </iframe>
+           </body>
+           </html>
+      </iframe>
+
+
+    </body>
+</html>
+
+
+*********************** WAITS ***********************
+
+~Implicit wait is going to wait for the WebElement will generated
+to be found until the timeout
+driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS)
+  1. declare them only once in the starting of your code----> global waits
+
+~Explicit wait is condition wait(like wait for the webElement to be visible and
+clickable).

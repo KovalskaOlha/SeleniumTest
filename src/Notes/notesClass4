@@ -21,7 +21,7 @@ ________________________________________________
   Css has contains method that can be used
   Syntax:
             tagname[attribute*='partial attribute value']
-  Css has someother amazing features to like
+  Css has some other amazing features to like
      a. starts-with method in css;
             tagname[attribute^='starting attribute value']   where ^ means starts with
 
@@ -35,6 +35,28 @@ Radio Buttons
 .isEnabled()---> if we can select the button(greyed out(not selectable)) boolean
 .isSelected()----->check if button is selected  boolean
 .isDisplayed()---->visible or not     boolen
+
+Radio Button and Checkboxes are almost the same
+
+
+Approach to single checkbox:
+1.inspect the checkbox
+2.write down the correct locator in the Dom
+3.use find Element to find the checkbox
+4.click on it
+
+if I want to check that check box is selected?
+checkbox.isSelected()---> True (means selected)
+
+Approach to multiple checkboxes:
+1.inspect in the DOM
+2.writethe locator in such a way that it is able to select all the required checkbox
+3. use find ElementS to get all those checkbox
+4. iterate through the list
+5. while iteration look for your desires checkbox
+if condition to make the selection
+
+
 
 
 

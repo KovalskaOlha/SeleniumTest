@@ -1,0 +1,73 @@
+********************Selenium Class 05************************
+
+Drop Down
+Two types:
+
+1.single selected value(just 1 option you can choose)
+2.multi select value
+__________
+When it comes to drop down we have a class in selenium that help us interact with them
+that class is  Select class;
+Simple condition ---> In order to be to use your drop down in down should have Select tag
+
+Approach with drop down:
+1. inspect the drop down
+2.check if it has the select tag
+3.write down the locator to find the Webelement drop down
+
+4.Declare an object of the select class
+5.use methods from select class to select the desired option
+---->selectedByvisibleText();
+     byValue();
+     byIndex();
+
+MultiSelect Drop Down:
+Approach:
+1. inspect the drop down
+2.check if it has the select tag
+3.write down the locator to find the Webelement drop down
+4.Declare an object of the select class
+
+5.use methods
+
+********************SwitchTo********************
+1.ALERTS(the pop ups window that appears)
+One the Alerts is open you can't do anything else.
+You should cancel or click OK
+Ypu can not inspect them
+There are 3 types
+- Java Script Alerts (deal with swithto commands)
+- HTML based alerts/pop up(you can deal with it how we deal with another webElement)
+and we can inspect them
+- Window based (we can not deal with them using selenium) f.e. add file
+
+Java Script alerts:
+simple alert (it tells you something)
+confirmation(ok or cancel)
+prompt (prompts you to enter something)
+Dealing with them is exactly same way
+
+commands:
+switchTo.alert
+
+2.WINDOWS
+every window you open on your browser has a unique code (window Handle)
+when we want to switch the window we tell
+driver.switchTo.window(handle)
+driver.getWindowHandle();----> return us a handle(current window on which the focus is) that will be the parameter
+
+.getWindowHandles();----> return the handles all the windows that are opened up
+and this method will return us Set of Strings
+new tab and new window are the same thing in Selenium
+ for(w:wh){
+ driver.switchToHandle(w);
+ title=driver.getTitle();
+ if(title==Help){
+ break;
+ }
+ }
+
+
+
+
+
