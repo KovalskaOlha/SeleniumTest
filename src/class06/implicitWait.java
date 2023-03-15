@@ -12,11 +12,11 @@ public class implicitWait {
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.facebook.com/");
-
+//implicit wait is always apply globally(each webelement)
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
         driver.findElement(By.linkText("Create new account")).click();
         driver.findElement(By.name("firstname")).sendKeys("John");
-        
+
     }
 }

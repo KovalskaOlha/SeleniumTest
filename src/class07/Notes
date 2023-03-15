@@ -1,0 +1,37 @@
+  Webdriver waits
+
+  1. implicit
+  When we use?   global wait
+  it gonna wait just to wait until the element will be found NOT TO BE VISIBLE
+
+
+  2. explicit wait  (when the webelement is on the dom )
+  Conditional wait that is going to wait until a condition is fulfilled
+  if code is disabled we need to use explicit
+  1. write xpath
+  2.refresh the page
+  3. if the xpath is now unable we use explicit wait
+
+  Syntax :
+           WebDriverWait wait=new WebDriverWait(driver,20);
+            wait.until(ExpectedConditions.alertIsPresent());
+
+          Can we have implicit and explicit wait?----> YES
+          It's a good practice to put implicit wait in start
+
+
+     Fluent wait ----> we dont  use it in industry
+
+
+
+     **************TABLES*************
+
+     1. table level access --> the whole table will be in a single string
+     2. row level access ----> all the rows of the table will be individually printed
+     3. column level access --> all the column of the table will be printed
+
+     difference is XPATH
+
+     if we want to fetch exact row and exact column --> //table[@id='customers']/tbody/tr[3]/td[3]
+     we add the indexes
+     in Dom index starts with 1
