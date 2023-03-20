@@ -1,0 +1,37 @@
+Table with pagination--->having multiole pages
+
+1.get all the values of the table column on page 1
+2. look for the desired id
+3. if found() --> click the checkbox and break;
+4. if not found continue until values are checked
+5.if all values are checked on a page but still not found
+6. click on the next page and repeat from step 2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+StaleElementException ---> when the page is refresh or downloading the new page
+
+
+jsExecutor--> scroll, drag and drop, click, highlight
+google! we can perform a lot of actions but we will use it very rarely
+approach:
+1. jsExcecutor js=(javascriptExcecutor) driver;
+js.executerscript("code from goole")
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+for taking a screenshort we need to download the jars common.io...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Action class:
+click
+rightclick
+draganddrop
+hiver   ----> .perform()
+
+action.draganddrop().perform():
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Uploadfile
+1.find the element to which we want to upload the file
+2.copy the path from a file we want to load
+and paste it in sendkeys
+
+
